@@ -374,23 +374,6 @@ end
 Log("Loading framework...", 255,0,0, tostring(gFont))
 ---------------------------------------------------------------------
  
--- Automatically Add players to Blacklist --
- 
-Mouse = game.Players.LocalPlayer:GetMouse()
- 
-Instance.new('RemoteEvent', game:service'ReplicatedStorage'.Interaction).Name = "Ban"
- 
-Client = game.ReplicatedStorage.Interaction.ClientSetListPlayer
-players = game.Players
-for i, v in pairs(players:GetPlayers()) do
-	if v.Name ~= players.LocalPlayer.Name then
-		Client:InvokeServer(players.LocalPlayer.BlacklistFolder, v, true)
-	end
-end
-players.PlayerAdded:connect(function(plr)
-	Client:InvokeServer(players.LocalPlayer.BlacklistFolder, plr, true)
-end)
- 
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "BLOOD",
   Text = "Loaded Successful."
