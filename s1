@@ -1,0 +1,410 @@
+ 
+-- Objects
+ 
+local Intro = Instance.new("ScreenGui")
+local IntroImage = Instance.new("ImageLabel")
+local _1 = Instance.new("TextLabel")
+local _2 = Instance.new("TextLabel")
+local _3 = Instance.new("TextLabel")
+local _4 = Instance.new("TextLabel")
+local _5 = Instance.new("TextLabel")
+local _6 = Instance.new("TextLabel")
+local _7 = Instance.new("TextLabel")
+ 
+-- Properties
+ 
+Intro.Name = "Intro"
+Intro.Parent = game.CoreGui
+ 
+IntroImage.Name = "IntroImage"
+IntroImage.Parent = Intro
+IntroImage.BackgroundColor3 = Color3.new(0, 0.298039, 0.498039)
+IntroImage.BackgroundTransparency = 1
+IntroImage.BorderColor3 = Color3.new(1, 1, 1)
+IntroImage.BorderSizePixel = 0
+IntroImage.Position = UDim2.new(0.400, 0, 0.200, 0)
+IntroImage.Size = UDim2.new(0, 356, 0, 347)
+IntroImage.Image = "rbxassetid://1130382821"
+ 
+_1.Name = "1"
+_1.Parent = IntroImage
+_1.BackgroundColor3 = Color3.fromRGB(249, 214, 46)
+_1.BackgroundTransparency = 1
+_1.BorderSizePixel = 0
+_1.Position = UDim2.new(0.109550565, 0, 0.423631132, 0)
+_1.Size = UDim2.new(0, 40, 0, 53)
+_1.Font = Enum.Font.ArialBold
+_1.FontSize = Enum.FontSize.Size14
+_1.Text = " "
+_1.TextColor3 = Color3.new(255, 0, 0)
+_1.TextScaled = true
+_1.TextSize = 14
+_1.TextWrapped = true
+ 
+_2.Name = "2"
+_2.Parent = IntroImage
+_2.BackgroundColor3 = Color3.new(0, 0.298039, 0.498039)
+_2.BackgroundTransparency = 1
+_2.BorderSizePixel = 0
+_2.Position = UDim2.new(0.221910119, 0, 0.423631132, 0)
+_2.Size = UDim2.new(0, 40, 0, 53)
+_2.Font = Enum.Font.ArialBold
+_2.FontSize = Enum.FontSize.Size14
+_2.Text = "B"
+_2.TextColor3 = Color3.new(255, 0, 0)
+_2.TextScaled = true
+_2.TextSize = 14
+_2.TextWrapped = true
+ 
+_3.Name = "3"
+_3.Parent = IntroImage
+_3.BackgroundColor3 = Color3.new(0, 0.298039, 0.498039)
+_3.BackgroundTransparency = 1
+_3.BorderSizePixel = 0
+_3.Position = UDim2.new(0.334269673, 0, 0.423631132, 0)
+_3.Size = UDim2.new(0, 40, 0, 53)
+_3.Font = Enum.Font.ArialBold
+_3.FontSize = Enum.FontSize.Size14
+_3.Text = "L"
+_3.TextColor3 = Color3.new(255, 0, 0)
+_3.TextScaled = true
+_3.TextSize = 14
+_3.TextWrapped = true
+ 
+_4.Name = "4"
+_4.Parent = IntroImage
+_4.BackgroundColor3 = Color3.new(0, 0.298039, 0.498039)
+_4.BackgroundTransparency = 1
+_4.BorderSizePixel = 0
+_4.Position = UDim2.new(0.446629226, 0, 0.423631132, 0)
+_4.Size = UDim2.new(0, 40, 0, 53)
+_4.Font = Enum.Font.ArialBold
+_4.FontSize = Enum.FontSize.Size14
+_4.Text = "O"
+_4.TextColor3 = Color3.new(255, 0, 0)
+_4.TextScaled = true
+_4.TextSize = 14
+_4.TextWrapped = true
+ 
+_5.Name = "5"
+_5.Parent = IntroImage
+_5.BackgroundColor3 = Color3.new(0, 0.298039, 0.498039)
+_5.BackgroundTransparency = 1
+_5.BorderSizePixel = 0
+_5.Position = UDim2.new(0.55898881, 0, 0.423631132, 0)
+_5.Size = UDim2.new(0, 40, 0, 53)
+_5.Font = Enum.Font.ArialBold
+_5.FontSize = Enum.FontSize.Size14
+_5.Text = "O"
+_5.TextColor3 = Color3.new(255, 0, 0)
+_5.TextScaled = true
+_5.TextSize = 14
+_5.TextWrapped = true
+ 
+_6.Name = "6"
+_6.Parent = IntroImage
+_6.BackgroundColor3 = Color3.new(0, 0.298039, 0.498039)
+_6.BackgroundTransparency = 1
+_6.BorderSizePixel = 0
+_6.Position = UDim2.new(0.671348333, 0, 0.423631132, 0)
+_6.Size = UDim2.new(0, 40, 0, 53)
+_6.Font = Enum.Font.ArialBold
+_6.FontSize = Enum.FontSize.Size14
+_6.Text = "D"
+_6.TextColor3 = Color3.new(255, 0, 0)
+_6.TextScaled = true
+_6.TextSize = 14
+_6.TextWrapped = true
+ 
+_7.Name = "7"
+_7.Parent = IntroImage
+_7.BackgroundColor3 = Color3.new(1, 1, 1)
+_7.BackgroundTransparency = 1
+_7.BorderSizePixel = 0
+_7.Position = UDim2.new(0.775280893, 0, 0.423631132, 0)
+_7.Size = UDim2.new(0, 40, 0, 53)
+_7.Font = Enum.Font.ArialBold
+_7.FontSize = Enum.FontSize.Size14
+_7.Text = " "
+_7.TextColor3 = Color3.new(255, 0, 0)
+_7.TextScaled = true
+_7.TextSize = 14
+_7.TextWrapped = true
+ 
+ 
+ 
+_1.TextTransparency = 0.2
+wait()
+_2.TextTransparency = 0.2
+wait()
+_3.TextTransparency = 0.2
+wait()
+_4.TextTransparency = 0.2
+wait()
+_5.TextTransparency = 0.2
+wait()
+_6.TextTransparency = 0.2
+wait()
+_7.TextTransparency = 0.2
+wait()
+IntroImage.ImageTransparency = 0.2
+wait()
+_1.TextTransparency = 0.3
+wait()
+_2.TextTransparency = 0.3
+wait()
+_3.TextTransparency = 0.3
+wait()
+_4.TextTransparency = 0.3
+wait()
+_5.TextTransparency = 0.3
+wait()
+_6.TextTransparency = 0.3
+wait()
+_7.TextTransparency = 0.3
+wait()
+IntroImage.ImageTransparency = 0.3
+wait()
+_1.TextTransparency = 0.4
+wait()
+_2.TextTransparency = 0.4
+wait()
+_3.TextTransparency = 0.4
+wait()
+_4.TextTransparency = 0.4
+wait()
+_5.TextTransparency = 0.4
+wait()
+_6.TextTransparency = 0.4
+wait()
+_7.TextTransparency = 0.4
+wait()
+IntroImage.ImageTransparency = 0.4
+wait()
+_1.TextTransparency = 0.5
+wait()
+_2.TextTransparency = 0.5
+wait()
+_3.TextTransparency = 0.4
+wait()
+_4.TextTransparency = 0.5
+wait()
+_5.TextTransparency = 0.5
+wait()
+_6.TextTransparency = 0.5
+wait()
+_7.TextTransparency = 0.5
+wait()
+IntroImage.ImageTransparency = 0.5
+wait()
+_1.TextTransparency = 0.6
+wait()
+_2.TextTransparency = 0.6
+wait()
+_3.TextTransparency = 0.6
+wait()
+_4.TextTransparency = 0.6
+wait()
+_5.TextTransparency = 0.6
+wait()
+_6.TextTransparency = 0.6
+wait()
+_7.TextTransparency = 0.6
+wait()
+IntroImage.ImageTransparency = 0.6
+wait()
+_1.TextTransparency = 0.7
+wait()
+_2.TextTransparency = 0.7
+wait()
+_3.TextTransparency = 0.7
+wait()
+_4.TextTransparency = 0.7
+wait()
+_5.TextTransparency = 0.7
+wait()
+_6.TextTransparency = 0.7
+wait()
+_7.TextTransparency = 0.7
+wait()
+IntroImage.ImageTransparency = 0.7
+wait()
+_1.TextTransparency = 0.8
+wait()
+_2.TextTransparency = 0.8
+wait()
+_3.TextTransparency = 0.8
+wait()
+_4.TextTransparency = 0.8
+wait()
+_5.TextTransparency = 0.8
+wait()
+_6.TextTransparency = 0.8
+wait()
+_7.TextTransparency = 0.8
+wait()
+IntroImage.ImageTransparency = 0.8
+wait()
+_1.TextTransparency = 0.9
+wait()
+_2.TextTransparency = 0.9
+wait()
+_3.TextTransparency = 0.9
+wait()
+_4.TextTransparency = 0.9
+wait()
+_5.TextTransparency = 0.9
+wait()
+_6.TextTransparency = 0.9
+wait()
+_7.TextTransparency = 0.9
+wait()
+IntroImage.ImageTransparency = 0.9
+wait()
+_1.TextTransparency = 1
+wait()
+_2.TextTransparency = 1
+wait()
+_3.TextTransparency = 1
+wait()
+_4.TextTransparency = 1
+wait()
+_5.TextTransparency = 1
+wait()
+_6.TextTransparency = 1
+wait()
+_7.TextTransparency = 1
+wait()
+IntroImage.ImageTransparency = 0.9
+wait()
+_1.TextTransparency = 1.1
+wait()
+_2.TextTransparency = 1.1
+wait()
+_3.TextTransparency = 1.1
+wait()
+_4.TextTransparency = 1.1
+wait()
+_5.TextTransparency = 1.1
+wait()
+_6.TextTransparency = 1.1
+wait()
+_7.TextTransparency = 1.1
+wait()
+IntroImage.ImageTransparency = 5.1
+wait()
+Intro:Destroy()
+wait()
+ 
+local s = Instance.new("Sound")
+s.Name = "Sound"
+s.SoundId = "http://www.roblox.com/asset/?id=2528420941"
+s.Volume = 0
+s.Looped = false
+s.archivable = false
+s.Parent = game.Workspace
+--Join
+ 
+local k = Instance.new("Sound")
+k.Name = "Soundzz"
+k.SoundId = "http://www.roblox.com/asset/?id=305977837"
+k.Volume = 0
+k.Looped = false
+k.archivable = false
+k.Parent = game.Workspace
+--Left
+ 
+local q = Instance.new("Sound")
+q.Name = "Soundzzzz"
+q.SoundId = "http://www.roblox.com/asset/?id=249869145"
+q.Volume = 0
+q.Looped = false
+q.archivable = false
+q.Parent = game.Workspace
+--Systems Online
+ 
+local function SendNotification(title,text,duration,...)
+  game.StarterGui:SetCore("SendNotification", {
+    Title = title;
+    Text = text;
+    Icon = "";
+    Duration = duration;
+  })
+end
+ 
+  game.Players.ChildAdded:Connect(function(player)
+  if not pcall (function()
+  SendNotification("Player JOINED",""..player.Name.." has JOINED the game",5 )
+  s:Play()
+  end) then
+    print ("Error")
+  end
+  end)
+---------------------------------------------------------------------
+  -- Same extra's apply down here as well.
+ 
+  game.Players.ChildRemoved:Connect(function(player)
+  if not pcall (function()
+  SendNotification("Player LEFT",""..player.Name.." has LEFT the game",4.4 )
+  k:Play()
+  end) then
+    print ("Error")
+  end
+  end)
+ 
+  SendNotification("Loaded","Join and leave detector is loaded",2)
+  q:Play()
+ 
+-- Variables --
+ 
+local Script = "BLOOD"
+local gFont = "SourceSans"
+local Visi = true
+ 
+-- Functions -- 
+ 
+function Log(text, r, g, b, font)
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text = "{" .. tostring(Script) .. "} - " .. text;
+    Color = Color3.new(r, g, b);
+    Font = Enum.Font[font];
+    FontSize = Enum.FontSize.Size10;
+    })
+end
+Log("Loading framework...", 255,0,0, tostring(gFont))
+---------------------------------------------------------------------
+ 
+-- Automatically Add players to Blacklist --
+ 
+Mouse = game.Players.LocalPlayer:GetMouse()
+ 
+Instance.new('RemoteEvent', game:service'ReplicatedStorage'.Interaction).Name = "Ban"
+ 
+Client = game.ReplicatedStorage.Interaction.ClientSetListPlayer
+players = game.Players
+for i, v in pairs(players:GetPlayers()) do
+	if v.Name ~= players.LocalPlayer.Name then
+		Client:InvokeServer(players.LocalPlayer.BlacklistFolder, v, true)
+	end
+end
+players.PlayerAdded:connect(function(plr)
+	Client:InvokeServer(players.LocalPlayer.BlacklistFolder, plr, true)
+end)
+ 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+  Title = "BLOOD",
+  Text = "Loaded Successful."
+})
+ 
+local players = game:GetService('Players')
+if game.Players.LocalPlayer then 
+game.StarterGui:SetCore('SendNotification', {
+    Title = ' '.. players.LocalPlayer.Name..'!',
+    Text = 'Welcome to Bloods GUI!',
+    Icon = [[http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&userName=]]..players.LocalPlayer.Name..[[&RAND]] .. math.random(1,10000000),
+    Duration = 5,
+   })
+  end
+ 
+---------------------------------------------------------------------
+Log("Loaded framework successfully!", 0,255,255, tostring(gFont))
