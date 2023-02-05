@@ -403,14 +403,14 @@ function DiscordLib:Window(text)
 
 	SettingsFrame.Name = "SettingsFrame"
 	SettingsFrame.Parent = MainFrame
-	SettingsFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+	SettingsFrame.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	SettingsFrame.BackgroundTransparency = 1.000
 	SettingsFrame.Size = UDim2.new(0, 681, 0, 396)
 	SettingsFrame.Visible = false
 
 	Settings.Name = "Settings"
 	Settings.Parent = SettingsFrame
-	Settings.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+	Settings.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	Settings.BorderSizePixel = 0
 	Settings.Position = UDim2.new(0, 0, 0.0530303046, 0)
 	Settings.Size = UDim2.new(0, 681, 0, 375)
@@ -528,13 +528,13 @@ function DiscordLib:Window(text)
 
 	UserPanel.Name = "UserPanel"
 	UserPanel.Parent = SettingsHolder
-	UserPanel.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+	UserPanel.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	UserPanel.Position = UDim2.new(0.365638763, 0, 0.130666673, 0)
 	UserPanel.Size = UDim2.new(0, 362, 0, 164)
 
 	UserSettingsPad.Name = "UserSettingsPad"
 	UserSettingsPad.Parent = UserPanel
-	UserSettingsPad.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+	UserSettingsPad.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	UserSettingsPad.Position = UDim2.new(0.0331491716, 0, 0.568140388, 0)
 	UserSettingsPad.Size = UDim2.new(0, 337, 0, 56)
 
@@ -590,7 +590,7 @@ function DiscordLib:Window(text)
 
 	EditBtn.Name = "EditBtn"
 	EditBtn.Parent = UserSettingsPad
-	EditBtn.BackgroundColor3 = Color3.fromRGB(116, 127, 141)
+	EditBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	EditBtn.Position = UDim2.new(0.797671914, 0, 0.232142866, 0)
 	EditBtn.Size = UDim2.new(0, 55, 0, 30)
 	EditBtn.Font = Enum.Font.Gotham
@@ -611,7 +611,7 @@ function DiscordLib:Window(text)
 		TweenService:Create(
 			EditBtn,
 			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-			{BackgroundColor3 = Color3.fromRGB(116, 127, 141)}
+			{BackgroundColor3 = Color3.fromRGB(0,0,0)}
 		):Play()
 	end)
 
@@ -777,7 +777,7 @@ function DiscordLib:Window(text)
 
 		Text1.Name = "Text1"
 		Text1.Parent = AvatarChange
-		Text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Text1.BackgroundColor3 = Color3.fromRGB(0,0,0)
 		Text1.BackgroundTransparency = 1.000
 		Text1.Position = UDim2.new(-0.000594122568, 0, 0.0202020202, 0)
 		Text1.Size = UDim2.new(0, 346, 0, 68)
@@ -1066,14 +1066,14 @@ function DiscordLib:Window(text)
 
 	LeftFrame.Name = "LeftFrame"
 	LeftFrame.Parent = SettingsHolder
-	LeftFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+	LeftFrame.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	LeftFrame.BorderSizePixel = 0
 	LeftFrame.Position = UDim2.new(0, 0, -0.000303059904, 0)
 	LeftFrame.Size = UDim2.new(0, 233, 0, 375)
 
 	MyAccountBtn.Name = "MyAccountBtn"
 	MyAccountBtn.Parent = LeftFrame
-	MyAccountBtn.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
+	MyAccountBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	MyAccountBtn.BorderSizePixel = 0
 	MyAccountBtn.Position = UDim2.new(0.271232396, 0, 0.101614028, 0)
 	MyAccountBtn.Size = UDim2.new(0, 160, 0, 30)
