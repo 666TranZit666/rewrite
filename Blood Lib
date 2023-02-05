@@ -287,7 +287,8 @@ function DiscordLib:Window(text)
 
 	CloseBtn.MouseButton1Click:Connect(
 		function()
-			MainFrame:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+			game.CoreGui.Discord:Destroy()
+			game.CoreGui.info:Destroy()
 		end
 	)
 
@@ -2509,7 +2510,7 @@ function DiscordLib:Window(text)
 
 				Dropdown.Name = "Dropdown"
 				Dropdown.Parent = ChannelHolder
-				Dropdown.BackgroundColor3 = Color3.fromRGB(64,0,1)
+				Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Dropdown.BackgroundTransparency = 1.000
 				Dropdown.Position = UDim2.new(0.0796874985, 0, 0.445175439, 0)
 				Dropdown.Size = UDim2.new(0, 403, 0, 73)
