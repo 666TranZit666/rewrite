@@ -293,25 +293,25 @@ function DiscordLib:Window(text)
 
 	CloseBtn.MouseEnter:Connect(
 		function()
-			CloseBtn.BackgroundColor3 = Color3.fromRGB(240, 71, 71)
+			CloseBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 		end
 	)
 
 	CloseBtn.MouseLeave:Connect(
 		function()
-			CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+			CloseBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 		end
 	)
 
 	MinimizeBtn.MouseEnter:Connect(
 		function()
-			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(40, 43, 46)
+			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 		end
 	)
 
 	MinimizeBtn.MouseLeave:Connect(
 		function()
-			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 		end
 	)
 
