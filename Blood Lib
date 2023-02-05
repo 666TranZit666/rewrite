@@ -2084,7 +2084,7 @@ function DiscordLib:Window(text)
 			
 			ChannelBtn.MouseEnter:Connect(function()
 				if currentchanneltoggled ~= ChannelBtn.Name then
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(52,55,60)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 					ChannelBtnTitle.TextColor3 = Color3.fromRGB(220,221,222)
 				end
 			end)
@@ -2105,7 +2105,7 @@ function DiscordLib:Window(text)
 				end
 				for i, v in next, ServerChannelHolder:GetChildren() do
 					if v.ClassName == "TextButton" then
-						v.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+						v.BackgroundColor3 = Color3.fromRGB(0,0,0)
 						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(114, 118, 125)
 					end
 					ServerFrame.Visible = true
@@ -2528,7 +2528,7 @@ function DiscordLib:Window(text)
 
 				DropdownFrameOutline.Name = "DropdownFrameOutline"
 				DropdownFrameOutline.Parent = DropdownTitle
-				DropdownFrameOutline.AnchorPoint = Vector2.new(0.5, 0.5)
+				DropdownFrameOutline.AnchorPoint = Vector2.new(64,0,1)
 				DropdownFrameOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
 				DropdownFrameOutline.Position = UDim2.new(0.988442957, 0, 1.6197437, 0)
 				DropdownFrameOutline.Size = UDim2.new(0, 396, 0, 36)
