@@ -2111,7 +2111,7 @@ function DiscordLib:Window(text)
 					ServerFrame.Visible = true
 				end
 				ChannelTitle.Text = text
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(57,60,67)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255,255,255)
 				currentchanneltoggled = ChannelBtn.Name
 			end)
@@ -2119,7 +2119,7 @@ function DiscordLib:Window(text)
 			if fc == false then
 				fc = true
 				ChannelTitle.Text = text
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(57,60,67)
+				ChannelBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255,255,255)
 				currentchanneltoggled = ChannelBtn.Name
 				ChannelHolder.Visible = true
@@ -2539,7 +2539,7 @@ function DiscordLib:Window(text)
 
 				DropdownFrame.Name = "DropdownFrame"
 				DropdownFrame.Parent = DropdownTitle
-				DropdownFrame.BackgroundColor3 = Color3.fromRGB(48, 51, 57)
+				DropdownFrame.BackgroundColor3 = Color3.fromRGB(64,0,1)
 				DropdownFrame.ClipsDescendants = true
 				DropdownFrame.Position = UDim2.new(0.00999999978, 0, 1.06638527, 0)
 				DropdownFrame.Selectable = true
@@ -2590,7 +2590,7 @@ function DiscordLib:Window(text)
 
 				DropdownFrameMainOutline.Name = "DropdownFrameMainOutline"
 				DropdownFrameMainOutline.Parent = DropdownTitle
-				DropdownFrameMainOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
+				DropdownFrameMainOutline.BackgroundColor3 = Color3.fromRGB(64,0,1)
 				DropdownFrameMainOutline.Position = UDim2.new(-0.00155700743, 0, 2.16983342, 0)
 				DropdownFrameMainOutline.Size = UDim2.new(0, 396, 0, 81)
 				DropdownFrameMainOutline.Visible = false
@@ -2601,7 +2601,7 @@ function DiscordLib:Window(text)
 
 				DropdownFrameMain.Name = "DropdownFrameMain"
 				DropdownFrameMain.Parent = DropdownTitle
-				DropdownFrameMain.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+				DropdownFrameMain.BackgroundColor3 = Color3.fromRGB(64,0,1)
 				DropdownFrameMain.ClipsDescendants = true
 				DropdownFrameMain.Position = UDim2.new(0.00999999978, 0, 2.2568965, 0)
 				DropdownFrameMain.Selectable = true
