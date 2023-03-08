@@ -1,119 +1,19 @@
-if game.PlaceId == 13822889 then
-	local Anticheat_Version = "5dc9a659a92f93012e2ee532ea8d785e192aff0b1fd2d85306a831057d00292d8f500959aed33c5378b5c94c52ec9914"
-	
-	if getscripthash(game:GetService("Players").LocalPlayer.PlayerGui.LoadSaveGUI.LoadSaveClient.LocalScript) ~= Anticheat_Version then
-		print("Anticheat Updated")
-		return
-	end
-	-- BypassCounter
-	local Bypass_Count = 0
-	
-	-- Remote Deletion Bypass
-	if game:GetService("ReplicatedStorage").Interaction:FindFirstChild("Ban") then
-		for _, v in next, getconnections(game:GetService("ReplicatedStorage").Interaction.Ban.AncestryChanged) do
-			if pcall(function()
-				v:Disable()
-			end) then
-				Bypass_Count++
-				print("Disabled AncestryChanged Connection On Ban Remote")
-			end
-		end
-	end
-	
-	-- Destroy Ban Remote
-	if pcall(function()
-		if Bypass_Count == 0 then return end -- prevent ban
-		game:GetService("ReplicatedStorage").Interaction.Ban:Destroy()
-	end) then
-		Bypass_Count++
-		print("Destroyed Ban Remote")
-	end
-	
-	local Anticheat_Env = getsenv(game:GetService("Players").LocalPlayer.PlayerGui.LoadSaveGUI.LoadSaveClient.LocalScript)
-	
-	-- Hook Ban Function
-	hookfunction(Anticheat_Env.ban, function(...)
-		wait(9e9)
-	end)
-	
-	print("Hooked Ban Function")
-	
-	-- AntiKick / AntiLog
-	local __namecall
-	__namecall = hookmetamethod(game, "__namecall", newcclosure(function(...)
-		if tostring(...) == 'AddLog' then
-			wait(9e9)
-		end
-		if getnamecallmethod() == 'Kick' then
-			wait(9e9)
-		end
-		if tostring(...) == 'Ban' then
-			wait(9e9)
-		end
-		return __namecall(...)
-	end))
-	
-	print("Namecall Hooked")
-	
-	-- Finished
-	warn('Successfully Bypassed Anticheat')
-	else
-	local Anticheat_Version = "e7ac8cadcc3e52f2d504f0247371007b013d8d8acde576ad258952729046ae0b6298561844ccba510673af506b2c563a"
-	
-	if getscripthash(game:GetService("Players").LocalPlayer.PlayerGui.LoadSaveGUI.LoadSaveClient.LocalScript) ~= Anticheat_Version then
-		print("Anticheat Updated")
-		return
-	end
-	-- BypassCounter
-	local Bypass_Count = 0
-	
-	-- Remote Deletion Bypass
-	if game:GetService("ReplicatedStorage").Interaction:FindFirstChild("Ban") then
-		for _, v in next, getconnections(game:GetService("ReplicatedStorage").Interaction.Ban.AncestryChanged) do
-			if pcall(function()
-				v:Disable()
-			end) then
-				Bypass_Count++
-				print("Disabled AncestryChanged Connection On Ban Remote")
-			end
-		end
-	end
-	
-	-- Destroy Ban Remote
-	if pcall(function()
-		if Bypass_Count == 0 then return end -- prevent ban
-		game:GetService("ReplicatedStorage").Interaction.Ban:Destroy()
-	end) then
-		Bypass_Count++
-		print("Destroyed Ban Remote")
-	end
-	
-	local Anticheat_Env = getsenv(game:GetService("Players").LocalPlayer.PlayerGui.LoadSaveGUI.LoadSaveClient.LocalScript)
-	
-	-- Hook Ban Function
-	hookfunction(Anticheat_Env.ban, function(...)
-		wait(9e9)
-	end)
-	
-	print("Hooked Ban Function")
-	
-	-- AntiKick / AntiLog
-	local __namecall
-	__namecall = hookmetamethod(game, "__namecall", newcclosure(function(...)
-		if tostring(...) == 'AddLog' then
-			wait(9e9)
-		end
-		if getnamecallmethod() == 'Kick' then
-			wait(9e9)
-		end
-		if tostring(...) == 'Ban' then
-			wait(9e9)
-		end
-		return __namecall(...)
-	end))
-	
-	print("Namecall Hooked")
-	
-	-- Finished
-	warn('Successfully Bypassed Anticheat')
-	end
+local workinggamever = "Place Version: 2256"
+local gamever = game.CoreGui.RobloxGui.SettingsShield.SettingsShield.VersionContainer.PlaceVersionLabel.text
+
+
+if workinggamever == gamever then
+    local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+	Title = "Dazed X";
+	Text = "Supported game version";
+	Duration = 5;
+})
+else
+CoreGui:SetCore("SendNotification", {
+	Title = "Dazed X";
+	Text = "Game version Updated Proceed with caution";
+	Duration = 5;
+
+})
+end
