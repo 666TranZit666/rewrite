@@ -1,4 +1,4 @@
-local workinggamever = "Place Version: 2256"
+local workinggamever = "Place Version: 2257"
 local gamever = game.CoreGui.RobloxGui.SettingsShield.SettingsShield.VersionContainer.PlaceVersionLabel.text
 
 
@@ -9,7 +9,8 @@ CoreGui:SetCore("SendNotification", {
 	Text = "Supported game version";
 	Duration = 5;
 })
-else
+elseif workinggamever ~= gamever then
+    local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
 	Title = "Dazed X";
 	Text = "Game version Updated Proceed with caution";
