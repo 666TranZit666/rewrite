@@ -28,7 +28,7 @@ Text.Font=Enum.Font.GothamSemibold;
 Text.Position=UDim2.new(0,2,0,0);
 Text.BackgroundTransparency=1.000;
 
-
+wait()
 local RS = game:GetService("RunService")
 local frames = 0
 
