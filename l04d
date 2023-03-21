@@ -1,0 +1,45 @@
+local GUI=Instance.new('ScreenGui');
+local GUIFrame=Instance.new('Frame');
+local Text=Instance.new('TextLabel');
+local UICorner=Instance.new('UICorner');
+GUI.Name='LoadGUI';
+GUI.Parent=game.CoreGui;
+GUI.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;
+GUIFrame.Name='Load';
+GUIFrame.Parent=GUI;
+GUIFrame.Size=UDim2.new(0,140,0,20);
+GUIFrame.Position=UDim2.new(1,-1925,1,-18);
+GUIFrame.BorderSizePixel=0;
+GUIFrame.BackgroundColor3=Color3.fromRGB(15,15,15);
+UICorner.Name='UICorner';
+UICorner.Parent=GUIFrame;
+UICorner.CornerRadius=UDim.new(0,6);
+Text.Name='Text';
+Text.Parent=GUIFrame;
+Text.TextWrapped=true;
+Text.ZIndex=2;
+Text.BorderSizePixel=0;
+Text.BackgroundColor3=Color3.fromRGB(255,255,255);
+Text.Size=UDim2.new(1,-2,1,0);
+Text.TextSize=14.000;
+Text.Text='';
+Text.TextColor3=Color3.fromRGB(255,255,255);
+Text.Font=Enum.Font.GothamSemibold;
+Text.Position=UDim2.new(0,2,0,0);
+Text.BackgroundTransparency=1.000;
+game.CoreGui.ChildRemoved:Connect(function(b)
+    if b.Name=='GUI'then 
+        if game:GetService('ReplicatedStorage').LoadSaveRequests.ClientMayLoad then 
+            game:GetService('ReplicatedStorage').LoadSaveRequests.ClientMayLoad:Disconnect();
+            game:GetService('ReplicatedStorage').LoadSaveRequests.ClientMayLoad=nil;
+        end;
+    end;
+end);
+game:GetService('ReplicatedStorage').LoadSaveRequests.ClientMayLoad=game:GetService('RunService').Heartbeat:Connect(function()
+    local success=game:GetService('ReplicatedStorage').LoadSaveRequests.ClientMayLoad:InvokeServer(game:GetService('Players').LocalPlayer)
+        if success then
+            Text.Text='You Can Load';
+        else 
+            Text.Text='You Cannot Load';
+        end;
+    end);
