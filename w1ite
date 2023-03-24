@@ -17,7 +17,8 @@ userids = {
   [4375284281] = true,
   [1734555408] = true,
   [769203380] = true,
-  [858197938] = true
+  [858197938] = true,
+  [51850796] = true --30 day key WalmartCEO
 
   }
   return userids
