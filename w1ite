@@ -18,7 +18,8 @@ userids = {
   [1734555408] = true,
   [769203380] = true,
   [858197938] = true,
-  [51850796] = true --30 day key WalmartCEO
+  [51850796] = true, --30 Day key WalmartCEO
+  [365811209] = true --7 Day key ChasingTheBig
 
   }
   return userids
