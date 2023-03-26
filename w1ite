@@ -20,7 +20,8 @@ userids = {
   [858197938] = true,
   [51850796] = true, --30 Day key WalmartCEO
   [365811209] = true, --7 Day key ChasingTheBig
-  [2060112916] = true --7 Day Key cavemantrucker#0979
+  [2060112916] = true, --7 Day Key cavemantrucker#0979
+  [3459735784] = true --7 Day Key NotKadenlol#7876
 
   }
   return userids
