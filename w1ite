@@ -26,7 +26,6 @@ userids = {
   [3941261269] = true, --14 Day Key King Issei#2447
   [511808087] = true, --7 Day Key Onjijo2#3366
   [51850796] = true, --30 Day key WalmartCEO
-  [915715839] = true, --7 Day Key databreach#2420
   
   }
   return userids
