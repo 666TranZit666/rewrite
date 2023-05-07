@@ -24,10 +24,6 @@ userids = {
   [3633246813] = true,
   [925816760] = true,
   [3016365617] = true,
-  [2734361809] = true, --Toaster#9026 7 day key
-  [2798420932] = true, --jjspoitlol 14 day key wayyyy2hot#4902
-  [455927771] = true, --zaypye12 14 day key Zay!#9669
-  [2060112916] = true, --30 Day Key cavemantrucker#0979
   
   }
   return userids
