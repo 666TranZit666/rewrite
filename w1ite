@@ -24,7 +24,10 @@ userids = {
   [3633246813] = true,
   [925816760] = true,
   [3016365617] = true,
-  [674632760] = true --math#6950 14 days
+  [674632760] = true, --math#6950 14 days
+  [359916245] = true, --Lancmo#3214 7 days
+  [139615450] = true, --ZaWunderKid#0243 7 days
+  [2582266380] = true
   
   }
   return userids
