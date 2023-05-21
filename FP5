@@ -28,14 +28,8 @@ Text.Font=Enum.Font.GothamSemibold;
 Text.Position=UDim2.new(0,2,0,0);
 Text.BackgroundTransparency=1.000;
 
-local RS = game:GetService("RunService")
-local frames = 0
-
-RS.RenderStepped:Connect(function()
-	frames = frames + 1
+local script = Instance.new('LocalScript', Text)
+local RunService = game:GetService("RunService")
+RunService.RenderStepped:Connect(function(frame) -- This will fire every time a frame is rendered
+script.Parent.Text = ("FPS: "..math.round(1/frame)) 
 end)
-
-while wait(1) do
-	game:GetService("CoreGui").FPSGUI.FPSFrame.Text.Text = frames .. " FPS"
-	frames = 0
-end
