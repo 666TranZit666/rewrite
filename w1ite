@@ -28,7 +28,8 @@ userids = {
   [2582266380] = true,
   [2060112916] = true,
   [754177442] = true,
-  [224530119] = true
+  [224530119] = true,
+  [2529539759] = true --kin1
 
   }
   return userids
