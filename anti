@@ -1,4 +1,4 @@
-local workinggamever = "Place Version: 2258"
+local workinggamever = "Place Version: 2259"
 local gamever = game.CoreGui.RobloxGui.SettingsShield.SettingsShield.VersionContainer.PlaceVersionLabel.text
 
 
