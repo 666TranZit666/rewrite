@@ -30,7 +30,8 @@ userids = {
   [754177442] = true,
   [224530119] = true,
   [4166602509] = true, --kin1
-  [2826450083] = true --lolokdev
+  [2826450083] = true, --lolokdev
+  [2609709869] = true --I PRO
 
   }
   return userids
