@@ -36,8 +36,16 @@ FirFT = 0 BirchFT = 0 CherryFT = 0 WalnutFT = 0 GenericFT = 0 OakFT = 0 PineFT =
        for log,l in pairs(game.Workspace.PlayerModels:GetChildren()) do
                    if string.find(l.Name, "Plank") then
                 if l:FindFirstChild("Owner") and l.Owner.Value == game.Players.LocalPlayer then
-                if l:FindFirstChild("TreeClass") and l.TreeClass.Value == TreeB then
-                game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(l)
+                    if l:FindFirstChild("TreeClass") and l.TreeClass.Value == TreeB then
+
+                        local Part = Instance.new('Part',workspace)
+                        Part.Name = "Dazed"
+                        Part.Size = Vector3.new(55,0,55)
+                        Part.Anchored = true
+                        Part.Transparency = 1
+                        Part.CFrame = v.BuildDependentWood.CFrame
+                        
+                                game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(l)
                 l.WoodSection.CFrame = v.BuildDependentWood.CFrame
                 game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(l)
                 game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(l)
