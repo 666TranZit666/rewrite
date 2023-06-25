@@ -33,23 +33,25 @@ FirFT = 0 BirchFT = 0 CherryFT = 0 WalnutFT = 0 GenericFT = 0 OakFT = 0 PineFT =
         if v:FindFirstChild("Owner") and v.Owner.Value == game.Players.LocalPlayer then
         if v:FindFirstChild("Type") and v.Type.Value == "Blueprint" then
         if v:FindFirstChild("BuildDependentWood") then
+            local Part = Instance.new('Part',workspace)
+            Part.Name = "Dazed"
+            Part.Size = Vector3.new(5,0,5)
+            Part.Anchored = true
+            Part.Transparency = 1
+            Part.CFrame = Mouse.Target.Parent.BuildDependentWood.CFrame
+            local Da = workspace.Dazed
+            Da.Orientation = Vector3.new(0, 0, 0)
        for log,l in pairs(game.Workspace.PlayerModels:GetChildren()) do
                    if string.find(l.Name, "Plank") then
                 if l:FindFirstChild("Owner") and l.Owner.Value == game.Players.LocalPlayer then
                     if l:FindFirstChild("TreeClass") and l.TreeClass.Value == TreeB then
 
-                        local Part = Instance.new('Part',workspace)
-                        Part.Name = "Dazed"
-                        Part.Size = Vector3.new(55,0,55)
-                        Part.Anchored = true
-                        Part.Transparency = 1
-                        Part.CFrame = v.BuildDependentWood.CFrame
-                        
-                                game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(l)
-                l.WoodSection.CFrame = v.BuildDependentWood.CFrame
-                game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(l)
-                game.ReplicatedStorage.Interaction.ClientIsDragging:FireServer(l)
-                l.Name = "Done"
+                        for i = 1,40 do
+                            game:GetService("ReplicatedStorage").Interaction.ClientIsDragging:FireServer(l)
+                            l:PivotTo(Mouse.Target.Parent.BuildDependentWood.CFrame + Vector3.new(0,5,0))
+                            task.wait()
+                end
+                game.Workspace.Dazed:Destroy()
                 break
                 end
                         end
