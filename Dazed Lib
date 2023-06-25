@@ -273,7 +273,7 @@ function DiscordLib:Window(text)
 	ServersHold.BorderSizePixel = 0
 	ServersHold.Position = UDim2.new(-0.000359333731, 0, 0.0580808073, 0)
 	ServersHold.Size = UDim2.new(0, 71, 0, 373)
-	ServersHold.ScrollBarThickness = 1
+	ServersHold.ScrollBarThickness = 10
 	ServersHold.ScrollBarImageTransparency = 1
 	ServersHold.CanvasSize = UDim2.new(0, 0, 0, 0)
 
@@ -1862,7 +1862,7 @@ function DiscordLib:Window(text)
 		ServerChannelHolder.Selectable = false
 		ServerChannelHolder.Size = UDim2.new(0, 179, 0, 278)
 		ServerChannelHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
-		ServerChannelHolder.ScrollBarThickness = 4
+		ServerChannelHolder.ScrollBarThickness = 10
 		ServerChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(18, 19, 21)
 		ServerChannelHolder.ScrollBarImageTransparency = 1
 
@@ -2070,7 +2070,7 @@ function DiscordLib:Window(text)
 			ChannelHolder.BorderSizePixel = 0
 			ChannelHolder.Position = UDim2.new(0.0360843192, 0, 0.0241984241, 0)
 			ChannelHolder.Size = UDim2.new(0, 412, 0, 314)
-			ChannelHolder.ScrollBarThickness = 6
+			ChannelHolder.ScrollBarThickness = 10
 			ChannelHolder.CanvasSize = UDim2.new(0,0,0,0)
 			ChannelHolder.ScrollBarImageTransparency = 0
 			ChannelHolder.ScrollBarImageColor3 = Color3.fromRGB(18, 19, 21)
@@ -2632,7 +2632,7 @@ function DiscordLib:Window(text)
 				DropItemHolder.Position = UDim2.new(0, 0, 0.215384638, 0)
 				DropItemHolder.Size = UDim2.new(0, 385, 0, 0)
 				DropItemHolder.CanvasSize = UDim2.new(0, 0, 0, 0)
-				DropItemHolder.ScrollBarThickness = 6
+				DropItemHolder.ScrollBarThickness = 10
 				DropItemHolder.BorderSizePixel = 0
 				DropItemHolder.ScrollBarImageColor3 = Color3.fromRGB(28, 29, 32)
 
