@@ -30,8 +30,6 @@ userids = {
   [2060112916] = true,
   [754177442] = true,
   [224530119] = true,
-  [2609709869] = true, --I PRO
-  [4601243207] = true --Hiroshithe2nd
 
   }
   return userids
