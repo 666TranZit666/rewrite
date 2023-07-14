@@ -30,7 +30,6 @@ userids = {
   [2060112916] = true,
   [754177442] = true,
   [224530119] = true,
-  [4694189412] = true --Spity
 
   }
   return userids
